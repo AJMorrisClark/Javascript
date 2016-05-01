@@ -1,0 +1,136 @@
+If/else statement.
+Change the name associated with the variable at the top to make it say different things
+
+var name = "Amy";
+
+if (name === "Amy") {
+console.log("Hello me!");
+}
+else if (name === "Nicole") {
+console.log("Hi Nicole!");
+}
+else {
+console.log("Who are you?");
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Counting sheep loop, stops when the number is no longer less than 10. 
+
+var sheepCounted = 0
+
+while (sheepCounted < 10) {
+
+console.log("I have counted " + sheepCounted + " sheep!");
+
+sheepCounted++;
+
+}
+
+console.log ("Zzzzzzz");
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Printing out my favorite TV shows to the console
+
+var shows = ["Once Upon a Time", "Agents of Shield", "How to get away with Murder", "Blindspot"]
+
+for (var i = 0; i < shows.length; i++) {
+
+console.log("My favorite TV show is " + shows[i] + " .");
+
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Prints a list of foods I like
+
+var food = ["pizza", "hamburgers", "tacos"]
+
+
+for(var i = 0; i < food.length; i++) {
+
+console.log("One food I like is " + food[i] + " .");
+
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Brings up pop ups with each one saying something I like to do
+
+var hobbies = ["sleep", "eat", "watch movies", "go on vacation"]
+
+for (var i = 0; i < hobbies.length; i++) {
+
+alert("My favorite thing to do is " + hobbies[i] + " .");
+
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a list of things I hate
+
+var hate = ["being ignored", "mean people", "dusting", "sweating"]
+
+for (var i = 0; i < hate.length; i++){
+
+console.log("The things I hate are " + hate[i] + " .");
+
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Listing out letters in Annie's name
+
+var cat = "Annie";
+
+for (var i = 0; i < cat.length; i++){
+
+console.log("A letter in my cat's name is " + cat[i] + ".")
+
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Adding words to each index in an array and then printing them
+
+var colors = ["red","green","blue"];
+
+for(var i = 0; i < colors.length; i++) {
+
+colors[i] = "I like bright " + colors[i];
+
+console.log(colors[i]);
+
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Magic 8 ball
+
+var phrases = [
+
+"That sounds good",
+
+"Yes, you should definitely do that.",
+
+"I'm not sure that's a good idea.",
+
+"Maybe not today.",
+
+"Computer says no."
+
+];
+
+
+phrases[Math.floor(Math.random()* 5)];
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Random quote generator
+
+var quotes = ["To be or not to be, that is the question.", "Ask not what your country can do for you. Ask what you can do for your country.", "Whether you think you can or you think you can't, you're right."];
+
+quotes[Math.floor(Math.random() * 3)];
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
