@@ -1,13 +1,15 @@
+// @auth Amy Morris-Clark
+
 // reverse a number
 
 function reverse(num) {
-var num = num.toString();
-return num.split("").reverse().join("");
+const num = num.toString();
+let num.split("").reverse().join("");
 }
 reverse(123);
 
 function reverse(num){
-var num = num.toString();
+let num = num.toString();
  console.log(num.split("").reverse().join(""));
 }
 reverse(123);
@@ -16,7 +18,7 @@ reverse(123);
 //check for palindrome
 
 function pal(str){
-var str1 = str.split("").reverse("").join("");
+let str1 = str.split("").reverse("").join("");
 if (str1 == str) {
 	console.log("palindrome");
 }
@@ -28,7 +30,7 @@ pal("madam");
 // alphabetize string
 
 function alpha (str) {
-var str = str.split("").sort().join("");
+let str = str.split("").sort().join("");
 console.log(str);
 }
 alpha("computer");
@@ -52,7 +54,7 @@ checkOdd(52);
 
 function dayTime () {
 
-	var day = new Date().getDay(); 
+	let day = new Date().getDay(); 
 	 switch(day)  {
 	 case 0:
         day = "Sunday";
@@ -76,18 +78,77 @@ function dayTime () {
         day = "Saturday";
 }
 
-var time = new Date().getHours();
-var minutes = new Date().getMinutes();
-var seconds = new Date().getSeconds();
+let time = new Date().getHours();
+let minutes = new Date().getMinutes();
+let seconds = new Date().getSeconds();
 
 if (time > 12) {
-	time = time-12 + " PM";
-} else {
-	time = time + " AM";
-}
+	time = time-12;
+} 
 
-console.log ("Today is: " + day + "Current time is " + time +  ":" + minutes + ":" + seconds);
+console.log ("Today is " + day + ". Current time is " + time +  ":" + minutes + ":" + seconds);
 
 };
 
 dayTime();
+
+
+
+// Print the contents of the current window
+
+function printThis () {
+    window.print();
+}
+
+printThis();
+
+
+
+// Get current date
+
+function date() {
+    var d = new Date();
+    //getMonth starts at 0
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+    var year = d.getFullYear();
+   console.log(month + "/" + day + "/" + year);
+}
+
+date();
+
+
+//rotate a string one letter at a time
+
+function rev2(str) {
+var string = str.split("");
+
+for (var i = 0; i < 5; i++) {
+var popLetter = string.pop();
+var addLetter = string.unshift(popLetter);
+};
+string = string.join("");
+console.log(string);
+};
+
+rev2("w3resource");
+
+
+
+// check for leap year
+
+function leap (num) {
+
+if (num % 4 == 0) {
+    console.log("That's a leap year");
+}
+else {
+     console.log("That's not a leap year");
+}
+};
+
+leap(2004);
+
+
+
+
