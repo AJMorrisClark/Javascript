@@ -150,5 +150,23 @@ else {
 leap(2004);
 
 
+// Guess a number
+
+function guess(num) {
+
+let randomNum = Math.floor(Math.random() * 10) + 1;
+
+if (num == randomNum) {
+	console.log("Good Work!"); 
+}
+	else {
+		console.log("Not matched. The number was " + randomNum);
+	     }
+};
+
+guess();
+
+
+
 
 
