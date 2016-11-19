@@ -3,13 +3,13 @@
 // reverse a number
 
 function reverse(num) {
-const num = num.toString();
-let num.split("").reverse().join("");
+num = num.toString();
+num.split("").reverse().join("");
 }
 reverse(123);
 
 function reverse(num){
-let num = num.toString();
+num = num.toString();
  console.log(num.split("").reverse().join(""));
 }
 reverse(123);
@@ -18,19 +18,19 @@ reverse(123);
 //check for palindrome
 
 function pal(str){
-let str1 = str.split("").reverse("").join("");
+str1 = str.split("").reverse("").join("");
 if (str1 == str) {
 	console.log("palindrome");
 }
 else console.log("nope");
-};
+}
 pal("madam");
 
 
 // alphabetize string
 
 function alpha (str) {
-let str = str.split("").sort().join("");
+str = str.split("").sort().join("");
 console.log(str);
 }
 alpha("computer");
@@ -88,7 +88,7 @@ if (time > 12) {
 
 console.log ("Today is " + day + ". Current time is " + time +  ":" + minutes + ":" + seconds);
 
-};
+}
 
 dayTime();
 
@@ -126,10 +126,10 @@ var string = str.split("");
 for (var i = 0; i < 5; i++) {
 var popLetter = string.pop();
 var addLetter = string.unshift(popLetter);
-};
+}
 string = string.join("");
 console.log(string);
-};
+}
 
 rev2("w3resource");
 
@@ -139,13 +139,13 @@ rev2("w3resource");
 
 function leap (num) {
 
-if (num % 4 == 0) {
+if (num % 4 === 0) {
     console.log("That's a leap year");
 }
 else {
      console.log("That's not a leap year");
 }
-};
+}
 
 leap(2004);
 
@@ -162,7 +162,7 @@ if (num == randomNum) {
 	else {
 		console.log("Not matched. The number was " + randomNum);
 	     }
-};
+}
 
 guess();
 
